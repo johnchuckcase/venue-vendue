@@ -1,0 +1,11 @@
+version: '2'
+services:
+    postgres:
+      image: 'postgres:9.6.5'
+      ports:
+          - "1234:5432"
+      volumes: []
+      environment:
+        - POSTGRES_USER=test_user
+        - POSTGRES_PASSWORD=test_password
+        - POSTGRES_DB=test_venue_vendue
